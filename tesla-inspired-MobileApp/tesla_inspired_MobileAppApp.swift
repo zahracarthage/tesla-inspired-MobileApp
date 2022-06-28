@@ -13,8 +13,7 @@ struct tesla_inspired_MobileAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            HomeView()
         }
     }
 }

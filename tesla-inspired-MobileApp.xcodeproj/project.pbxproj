@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A80784E5286AD96B0085BA05 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80784E4286AD96B0085BA05 /* CarView.swift */; };
+		A80784EE286ADCCF0085BA05 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80784E6286ADCCF0085BA05 /* Lato-BoldItalic.ttf */; };
+		A80784EF286ADCCF0085BA05 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80784E7286ADCCF0085BA05 /* Lato-Black.ttf */; };
+		A80784F0286ADCCF0085BA05 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80784E8286ADCCF0085BA05 /* Lato-LightItalic.ttf */; };
+		A80784F1286ADCCF0085BA05 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80784E9286ADCCF0085BA05 /* Lato-Bold.ttf */; };
+		A80784F2286ADCCF0085BA05 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80784EA286ADCCF0085BA05 /* Lato-BlackItalic.ttf */; };
+		A80784F3286ADCCF0085BA05 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80784EB286ADCCF0085BA05 /* Lato-Italic.ttf */; };
+		A80784F4286ADCCF0085BA05 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80784EC286ADCCF0085BA05 /* Lato-Light.ttf */; };
+		A80784F5286ADCCF0085BA05 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80784ED286ADCCF0085BA05 /* Lato-Regular.ttf */; };
+		A80784FB286ADF540085BA05 /* Gilroy-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80784FA286ADF540085BA05 /* Gilroy-UltraLight.ttf */; };
+		A81C2AC4286B01A800118ACD /* triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81C2AC3286B01A800118ACD /* triangle.swift */; };
 		A852BD202868827300BE57C9 /* tesla_inspired_MobileAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852BD1F2868827300BE57C9 /* tesla_inspired_MobileAppApp.swift */; };
 		A852BD222868827300BE57C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852BD212868827300BE57C9 /* ContentView.swift */; };
 		A852BD242868827400BE57C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A852BD232868827400BE57C9 /* Assets.xcassets */; };
@@ -16,6 +27,11 @@
 		A852BD362868827400BE57C9 /* tesla_inspired_MobileAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852BD352868827400BE57C9 /* tesla_inspired_MobileAppTests.swift */; };
 		A852BD402868827400BE57C9 /* tesla_inspired_MobileAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852BD3F2868827400BE57C9 /* tesla_inspired_MobileAppUITests.swift */; };
 		A852BD422868827400BE57C9 /* tesla_inspired_MobileAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852BD412868827400BE57C9 /* tesla_inspired_MobileAppUITestsLaunchTests.swift */; };
+		A852BD502868836C00BE57C9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852BD4F2868836C00BE57C9 /* HomeView.swift */; };
+		A852BD53286883A800BE57C9 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852BD52286883A800BE57C9 /* Background.swift */; };
+		A852BD552868848400BE57C9 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852BD542868848400BE57C9 /* TopBar.swift */; };
+		A852BD572868868300BE57C9 /* CircleButtonNeumorphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852BD562868868300BE57C9 /* CircleButtonNeumorphic.swift */; };
+		A8E0B4DF286ACAAA003E574A /* neumorphic-unlock-btn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E0B4DE286ACAAA003E574A /* neumorphic-unlock-btn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A80784E4286AD96B0085BA05 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		A80784E6286ADCCF0085BA05 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "../../../../Downloads/Lato/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A80784E7286ADCCF0085BA05 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../../../../Downloads/Lato/Lato-Black.ttf"; sourceTree = "<group>"; };
+		A80784E8286ADCCF0085BA05 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "../../../../Downloads/Lato/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		A80784E9286ADCCF0085BA05 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../../Downloads/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		A80784EA286ADCCF0085BA05 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "../../../../Downloads/Lato/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A80784EB286ADCCF0085BA05 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../../Downloads/Lato/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		A80784EC286ADCCF0085BA05 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../../../Downloads/Lato/Lato-Light.ttf"; sourceTree = "<group>"; };
+		A80784ED286ADCCF0085BA05 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../../Downloads/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		A80784FA286ADF540085BA05 /* Gilroy-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-UltraLight.ttf"; path = "../../../../Downloads/Gilroy-UltraLight.ttf"; sourceTree = "<group>"; };
+		A81C2AC3286B01A800118ACD /* triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triangle.swift; sourceTree = "<group>"; };
 		A852BD1C2868827300BE57C9 /* tesla-inspired-MobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tesla-inspired-MobileApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A852BD1F2868827300BE57C9 /* tesla_inspired_MobileAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tesla_inspired_MobileAppApp.swift; sourceTree = "<group>"; };
 		A852BD212868827300BE57C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +75,12 @@
 		A852BD3B2868827400BE57C9 /* tesla-inspired-MobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tesla-inspired-MobileAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A852BD3F2868827400BE57C9 /* tesla_inspired_MobileAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tesla_inspired_MobileAppUITests.swift; sourceTree = "<group>"; };
 		A852BD412868827400BE57C9 /* tesla_inspired_MobileAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tesla_inspired_MobileAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A852BD4F2868836C00BE57C9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A852BD52286883A800BE57C9 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		A852BD542868848400BE57C9 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		A852BD562868868300BE57C9 /* CircleButtonNeumorphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonNeumorphic.swift; sourceTree = "<group>"; };
+		A8E0B4CF286ABE00003E574A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A8E0B4DE286ACAAA003E574A /* neumorphic-unlock-btn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "neumorphic-unlock-btn.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +131,10 @@
 		A852BD1E2868827300BE57C9 /* tesla-inspired-MobileApp */ = {
 			isa = PBXGroup;
 			children = (
+				A8E0B4CF286ABE00003E574A /* Info.plist */,
+				A8E0B4C4286ABDBC003E574A /* fonts */,
+				A852BD512868839C00BE57C9 /* contants */,
+				A852BD4E2868835400BE57C9 /* views */,
 				A852BD1F2868827300BE57C9 /* tesla_inspired_MobileAppApp.swift */,
 				A852BD212868827300BE57C9 /* ContentView.swift */,
 				A852BD232868827400BE57C9 /* Assets.xcassets */,
@@ -131,6 +168,43 @@
 				A852BD412868827400BE57C9 /* tesla_inspired_MobileAppUITestsLaunchTests.swift */,
 			);
 			path = "tesla-inspired-MobileAppUITests";
+			sourceTree = "<group>";
+		};
+		A852BD4E2868835400BE57C9 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A852BD4F2868836C00BE57C9 /* HomeView.swift */,
+				A80784E4286AD96B0085BA05 /* CarView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A852BD512868839C00BE57C9 /* contants */ = {
+			isa = PBXGroup;
+			children = (
+				A852BD52286883A800BE57C9 /* Background.swift */,
+				A852BD542868848400BE57C9 /* TopBar.swift */,
+				A852BD562868868300BE57C9 /* CircleButtonNeumorphic.swift */,
+				A8E0B4DE286ACAAA003E574A /* neumorphic-unlock-btn.swift */,
+				A81C2AC3286B01A800118ACD /* triangle.swift */,
+			);
+			path = contants;
+			sourceTree = "<group>";
+		};
+		A8E0B4C4286ABDBC003E574A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A80784FA286ADF540085BA05 /* Gilroy-UltraLight.ttf */,
+				A80784E7286ADCCF0085BA05 /* Lato-Black.ttf */,
+				A80784EA286ADCCF0085BA05 /* Lato-BlackItalic.ttf */,
+				A80784E9286ADCCF0085BA05 /* Lato-Bold.ttf */,
+				A80784E6286ADCCF0085BA05 /* Lato-BoldItalic.ttf */,
+				A80784EB286ADCCF0085BA05 /* Lato-Italic.ttf */,
+				A80784EC286ADCCF0085BA05 /* Lato-Light.ttf */,
+				A80784E8286ADCCF0085BA05 /* Lato-LightItalic.ttf */,
+				A80784ED286ADCCF0085BA05 /* Lato-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +311,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80784EF286ADCCF0085BA05 /* Lato-Black.ttf in Resources */,
+				A80784F1286ADCCF0085BA05 /* Lato-Bold.ttf in Resources */,
+				A80784FB286ADF540085BA05 /* Gilroy-UltraLight.ttf in Resources */,
+				A80784F2286ADCCF0085BA05 /* Lato-BlackItalic.ttf in Resources */,
+				A80784F4286ADCCF0085BA05 /* Lato-Light.ttf in Resources */,
+				A80784F0286ADCCF0085BA05 /* Lato-LightItalic.ttf in Resources */,
+				A80784EE286ADCCF0085BA05 /* Lato-BoldItalic.ttf in Resources */,
 				A852BD272868827400BE57C9 /* Preview Assets.xcassets in Resources */,
+				A80784F5286ADCCF0085BA05 /* Lato-Regular.ttf in Resources */,
+				A80784F3286ADCCF0085BA05 /* Lato-Italic.ttf in Resources */,
 				A852BD242868827400BE57C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +346,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A852BD552868848400BE57C9 /* TopBar.swift in Sources */,
+				A80784E5286AD96B0085BA05 /* CarView.swift in Sources */,
 				A852BD292868827400BE57C9 /* Persistence.swift in Sources */,
 				A852BD222868827300BE57C9 /* ContentView.swift in Sources */,
+				A852BD53286883A800BE57C9 /* Background.swift in Sources */,
 				A852BD202868827300BE57C9 /* tesla_inspired_MobileAppApp.swift in Sources */,
+				A8E0B4DF286ACAAA003E574A /* neumorphic-unlock-btn.swift in Sources */,
+				A852BD502868836C00BE57C9 /* HomeView.swift in Sources */,
 				A852BD2C2868827400BE57C9 /* tesla_inspired_MobileApp.xcdatamodeld in Sources */,
+				A81C2AC4286B01A800118ACD /* triangle.swift in Sources */,
+				A852BD572868868300BE57C9 /* CircleButtonNeumorphic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +518,7 @@
 				DEVELOPMENT_TEAM = 9F55972V7L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tesla-inspired-MobileApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +548,7 @@
 				DEVELOPMENT_TEAM = 9F55972V7L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tesla-inspired-MobileApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
