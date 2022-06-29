@@ -13,7 +13,7 @@ struct tesla_inspired_MobileAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ACView(isShowing: .constant(true))
         }
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+     NavigationView{
         ZStack{
             Background()
             VStack{
@@ -16,15 +17,26 @@ struct HomeView: View {
                          Spacer()
                     TopBar(enableSecondBtn: false, iconName1: "gearshape", iconName2: "person")
                 }.padding()
+                Spacer()
               
                 
                 HomeContent()
-                Spacer()
-                Unlock().offset(y:40)
-                Spacer()
+               Spacer()
+                Unlock().offset(y:18)
+                
+               
+              // Spacer()
             }
+                .padding(.top,-120)
+                .padding()
+            
            
         }
+     }.navigationViewStyle(.stack)
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitleDisplayMode(.inline) // Here
+
     }
 }
 
@@ -47,6 +59,7 @@ struct HomeContent: View{
                 .font(.custom("Gilroy-UltraLight", size: 188))
                 
                 .offset(y: -60)
+                
               
             
                 picture()
@@ -72,7 +85,7 @@ struct Unlock: View {
                 .font(.custom("Lato-Regular", size: 24))
                 .offset(y:-15)
             
-            neumorphic_unlock_btn()
+            neumorphic_unlock_btn(width: 128, height: 128)
             
             Text("Tap to open the car")
                 .foregroundColor(.white)
@@ -104,19 +117,42 @@ struct Header: View {
 
 struct picture: View{
     var body: some View{
-        Image("cybertruckhome")
-                .offset(x: 50, y: 60)
         
-        Image("light1")
-            .shadow(color: .white, radius: 1, x: 0, y: 0)
-            .offset(x: -145, y: 30)
+        ZStack{
             
-        Rectangle()
-            .blur(radius: 18)
-            .foregroundColor(.cyan)
-            .frame(width: 55, height: 10)
-            .offset(x: -145, y: 30)
+            HStack {
+                Rectangle()
+                
+                    .frame(width: 100, height: 35)
+                    .offset(x: 50, y: 180)
+                    //.foregroundColor(.gray)
+                .blur(radius: 24    )
+                
+                Rectangle()
+                    .frame(width: 310, height: 35)
+                    .offset(x: 75, y: 190)
+                .blur(radius: 17)
+            }
 
+            Image("cybertruckhome")
+                    .offset(x: 50, y: 60)
+            
+            Image("light1")
+                .shadow(color: .white, radius: 1, x: 0, y: 0)
+                .offset(x: -145, y: 30)
+        
+            Rectangle()
+                .blur(radius: 18)
+                .foregroundColor(.cyan)
+                .frame(width: 55, height: 10)
+                .offset(x: -145, y: 30)
+
+          
+
+
+
+        }
+     
         
     }
 }

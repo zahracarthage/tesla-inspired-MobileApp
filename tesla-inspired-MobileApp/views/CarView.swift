@@ -9,8 +9,13 @@ import SwiftUI
 
 struct CarView: View {
     var body: some View {
+            
+ 
         ZStack{
             Background()
+            VStack{
+                
+            
             VStack(alignment: .leading){
                 TopBar(enableSecondBtn: true, iconName1: "text.alignleft", iconName2: "person")
                 
@@ -18,8 +23,13 @@ struct CarView: View {
                 statusDescription()
                 informationSection()
                
+               
             }.padding()
+                bottomView()
+            }
+           
         }
+        
     }
 }
 
@@ -29,24 +39,52 @@ struct CarView_Previews: PreviewProvider {
     }
 }
 
+
+struct SwipeUp: View{
+    @State private var showModal: Bool = false
+    
+    var body: some View{
+        Button(action: {showModal = true})
+        {
+            Text("Click me")
+                .foregroundColor(.white)
+        }
+        ACView(isShowing: $showModal)
+    }
+}
+
 struct carImage : View
 {
     var body: some View{
         
-        ZStack{
-            Image("cybertruk2")
+        ZStack(alignment: .center){
+            
+           
+          
+
+            
+            Image("carshadow")
+             .offset(y:90)
+
+           Image("cybertruk2")
+               // .resizable()
+              //  .frame(width: 300.32, height: 180, alignment: .center)
+                .offset(x:0)
+            
+              //
+           
                 
-            Image("MaskGroup")
-                .shadow(color: .white, radius: 1, x: 0, y: 0)
-                .offset(x: 50, y: -18)
             Rectangle()
                 .blur(radius: 18)
                 .foregroundColor(.cyan)
-                .frame(width: 240, height: 10)
+                .frame(width: 200, height: 10)
                 .offset(x: 50, y: -18)
             
+            
+            
         }.padding(.top,50)
-            .padding(.leading,20)
+           .padding(.leading,30)
+        
       
         
     }
@@ -64,7 +102,7 @@ struct statusDescription: View{
             HStack(spacing: 15){
                 Card(picName: "battery.100", picText: "Battery", Text: "54%")
                 Card(picName: "location.fill", picText: "Range", Text: "297 km")
-                Card(picName: "thermometer.high", picText: "Temperature", Text: "27`C")
+                Card(picName: "thermometer.low", picText: "Temperature", Text: "27`C")
              
 
 
@@ -117,21 +155,14 @@ struct informationSection : View{
                 .font(.custom("Lato-Black", size: 24))
                 .foregroundColor(.white)
             
-        
-               
+            HStack(spacing: 30){
+            informationCardCirlce()
+            informationCardRectangle()
+            informationCardTriangle()
+            
+            }.frame(width: 400, height: 200, alignment: .leading)
            
-            ScrollView(.horizontal, showsIndicators: false){
-                HStack(spacing: 20){
-                    informationCardCirlce()
-                    informationCardRectangle()
-                    informationCardTriangle()
-                    
-                }.frame(minHeight: 0, maxHeight: .greatestFiniteMagnitude)
-
-               // Color.clear.padding()
-                   
-            }  .frame(height: 200)
-                .transition(.move(edge: .bottom))
+         
                
               
          
@@ -423,4 +454,74 @@ struct informationCardTriangle : View{
             }
                      
     
+}
+
+
+struct bottomView: View{
+    
+    var body: some View{
+        
+        
+            
+        
+        ZStack{
+          
+
+            
+            Rectangle()
+                .fill(
+                   LinearGradient(gradient: Gradient(colors: [Color("rectanglegradient1"),Color("gradientbg2")]), startPoint: .top, endPoint: .bottom)
+                
+          
+                )
+                .cornerRadius(45)
+                .frame(width: 420, height: 120)
+                .shadow(color: .white.opacity(0.2), radius: 1, x: 0, y: -2)
+                .offset(y:17)
+              
+                .ignoresSafeArea(.all)
+                .edgesIgnoringSafeArea(.horizontal)
+            
+        
+           
+            
+            headerSection()
+                .offset(y:14)
+            
+           Rectangle()
+                .frame(width: 44, height: 5)
+                .cornerRadius(50)
+                .offset(y: -30)
+           
+                
+        }
+        
+    
+        
+    }
+}
+
+struct headerSection: View{
+    var body: some View{
+        HStack(){
+            VStack(alignment: .leading){
+                Text("A/C is ON")
+                    .foregroundColor(.white)
+                    .font(.custom("Lato-Black", size: 18))
+                Spacer().frame(height: 8)
+                Text("Currently 27'C")
+                    .font(.custom("Lato-Regular", size: 15))
+                    .foregroundColor(Color("gradientbg1"))
+                Text("Will change in 2min")
+                    .font(.custom("Lato-Regular", size: 15))
+                    .foregroundColor(Color("gradientbg1"))
+                
+            }
+            Spacer()
+                .frame(width: 150)
+            Neumorphic_OnOffBtn(width: 70, height: 70)
+               
+          
+        }
+    }
 }

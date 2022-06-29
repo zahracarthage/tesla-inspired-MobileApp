@@ -10,6 +10,9 @@ import SwiftUI
 struct neumorphic_unlock_btn: View {
     @GestureState var tap = false
     @State var press = false
+    @State var tapped = false
+    var width: Double
+    var height : Double
     
     var body: some View {
         
@@ -40,6 +43,8 @@ struct neumorphic_unlock_btn: View {
                 
             }
             .frame(width: 128, height: 128)
+
+           // .frame(width: 128, height: 128)
             .background(
                 ZStack{
                     LinearGradient(gradient: Gradient(colors: [Color("BlueBtnStarter")
@@ -82,6 +87,7 @@ struct neumorphic_unlock_btn: View {
             
             .shadow(color: .black.opacity(0.7)
                     , radius: 17, x: 14, y: 20)
+            .scaleEffect(tap ? 1.2 : 1)
 
            
 
@@ -90,6 +96,8 @@ struct neumorphic_unlock_btn: View {
             LongPressGesture().updating($tap) {
                 currentState, gestureState, transaction in
                 gestureState = currentState
+             
+                
 
                 
             }
@@ -99,13 +107,34 @@ struct neumorphic_unlock_btn: View {
                    // press.toggle()
 
                     print("ended")
-                          NavigationLink("", destination: CarView(), isActive: $press)
+                    
+                   // tapped = true
+                    
+                    tapped.toggle()
+
+                    print(tapped)
+                  
+                    
+                 
                         
                    
                         
                 }
 
         )
+        NavigationLink("", destination: CarView()
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitle("", displayMode: .inline)
+                .navigationBarHidden(true)
+                       ,
+                       isActive: $tapped
+                       
+            
+        )  .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+        
+        
         
     
     
